@@ -1,0 +1,19 @@
+{
+  "produtos": [
+    {
+      "id":"1",
+      "nome":"teste",
+      "preco":"22.50"
+    },
+    {
+      "id":"2",
+      "nome":"teste2",
+      "preco":"78.50"
+    },
+    {
+      "id":"3",
+      "nome":"teste",
+      "preco":"200.50"
+    }
+  ]
+}

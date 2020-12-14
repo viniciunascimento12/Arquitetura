@@ -1,0 +1,10 @@
+version: '3.8'
+services:
+
+  rabbit:
+    image: "rabbitmg:3-management"
+    environment:
+      RABBITMQ_ERLANG_COOKIE: "Secret cookie here"
+    ports:
+      - "15672:15672"
+      - "5672:5672"

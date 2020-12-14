@@ -1,4 +1,4 @@
-module catalogo
+module checkout
 
 go 1.15
 

@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d791de-1d89-4d94-a411-0883fd1617d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/checkout/checkout.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkout/go.mod" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/checkout/templates/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogo/go.mod" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogo/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogo/templates/catalogo.html" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo/templates/catalogo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/produtos.json" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/produtos.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/checkout.go" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/checkout.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/queue/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/db/db.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/order/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/order/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/order.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/queue/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagamento/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagamento/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagamento/pagamento.go" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/pagamento.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,8 +36,8 @@
       <list>
         <option value="tsconfig.json" />
         <option value="package.json" />
-        <option value="Go File" />
         <option value="HTML File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
@@ -53,9 +67,18 @@
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/teste" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="com.goide.configuration.GoProjectSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Arquitetura\teste" />
+      <recent name="C:\wamp64\www\Arquitetura" />
+      <recent name="C:\wamp64\www\Arquitetura\bd" />
+      <recent name="C:\wamp64\www\Arquitetura\pagamento" />
+      <recent name="C:\wamp64\www\Arquitetura\order\queue" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">

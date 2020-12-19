@@ -7,7 +7,6 @@ import (
 
 func  Connect() *amqp.Channel {
 	conn, _ := amqp.Dial("amqp://guest:guest@localhost:5672")
-
 	canal, err := conn.Channel()
 	if err != nil {
 		panic(err.Error())
@@ -21,7 +20,7 @@ func Notify(payload []byte, exchange string, routingKey string, ch *amqp.Channel
 		routingKey,
 		false,
 		false,
-		amqp.Publishing{ContentType: "applicatio/json",
+		amqp.Publishing{ContentType: "application/json",
 						Body: []byte(payload),
 		   },
 		)
@@ -29,4 +28,38 @@ func Notify(payload []byte, exchange string, routingKey string, ch *amqp.Channel
 		panic(err.Error())
 	}
 	fmt.Println("mensagem enviada")
+}
+
+
+func StartConsumo(nomeFila string, ch *amqp.Channel, in chan []byte)  {
+	fila, err := ch.QueueDeclare(
+		nomeFila,
+		true,
+		false,
+		false,
+		false,
+		nil,
+		)
+	if err != nil {
+		panic(err.Error())
+	}
+	mensagens, err := ch.Consume(
+		fila.Name,
+		"checkout",
+		true,
+		false,
+		false,
+		false,
+		nil,
+		)
+	if err != nil {
+		panic(err.Error())
+	}
+
+	go func() {
+		for i := range  mensagens{
+				in <- []byte(i.Body)
+			}
+			close(in)
+	}()
 }

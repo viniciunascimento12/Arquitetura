@@ -1,6 +1,7 @@
 package main
 
 import (
+	"checkout/queue"
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
@@ -57,6 +58,9 @@ func finish(escrita http.ResponseWriter, leitura *http.Request)  {
 
 	data, _ := json.Marshal(order)
 	fmt.Println(string(data))
+
+	conexao := queue.Connect()
+	queue.Notify(data, "checkout_ex", "", conexao)
 
 	escrita.Write([]byte("Finalizado!"))
 }

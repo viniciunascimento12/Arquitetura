@@ -71,16 +71,9 @@ go run 'nome do arquivo e sua exetensão'
 
 Exemplo "go run catalogo.go" caso queira rodar o catalogo.
 
+Para o serviço de order tem dois comendos
 
+go run order -opt checkout
 
-
-
-
-
-
-
-
-
-______________________________________________________________________________________________________
-
+go run order -opt pagamento
       

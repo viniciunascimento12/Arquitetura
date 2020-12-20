@@ -29,6 +29,7 @@ type Order struct {
 	Fone string		`json:"fone"`
 	ProdutoID string `json:"produto_id"`
 	Status string `json:"status"`
+	Preco float64 `json:"preco,string"`
 	CreatedAt time.Time `json:"created_at,string"`
 }
 
@@ -71,18 +72,18 @@ func creatOrder(conteudo []byte) Order {
 	//order.Id = "123"
 	order.Status = "Pendente"
 	order.CreatedAt = time.Now()
-	Insert(order.Status)
+	insert(order.Status, order.Nome, order.CreatedAt, order.Email, order.Fone)
 	return order
 }
 
-func Insert(dado string) {
+func insert(status string, nome string, createdAt time.Time, email string, fone string) {
 	db := DbConn()
-	insForm, err := db.Prepare("INSERT INTO ordens(ordem) VALUES(?)")
+	insForm, err := db.Prepare("INSERT INTO ordens(ordem, nome, createdAt, email, fone) VALUES(?,?,?,?,?)")
 	if err != nil {
 		panic(err.Error())
 	}
-	insForm.Exec(dado)
-	fmt.Println("foi")
+	insForm.Exec(status, nome, createdAt, email, fone)
+	fmt.Println("Ordem enviada")
 
 	defer db.Close()
 }

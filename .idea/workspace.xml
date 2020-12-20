@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d791de-1d89-4d94-a411-0883fd1617d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalogo/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/checkout.go" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/checkout.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/queue/queue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout/templates/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout/templates/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/order/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/db/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/db/db.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/order/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/order/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/order/order.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/order.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/order/queue/queue.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pagamento/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagamento/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagamento/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pagamento/pagamento.go" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/pagamento.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/produtos/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

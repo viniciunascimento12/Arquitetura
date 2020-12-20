@@ -5,10 +5,20 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/streadway/amqp"
-	"github.com/go-sql-driver/mysql"
+	_ "github.com/go-sql-driver/mysql"
 	"pagamento/queue"
 	"time"
 )
+
+type Produto struct {
+	Id string `json:"id"`
+	Nome string `json:"nome"`
+	Preco float64 `json:"preco,string"`
+}
+
+type Produtos struct {
+	Produtos []Produto
+}
 
 type Order struct {
 	Id string           `json:"id"`
@@ -17,6 +27,7 @@ type Order struct {
 	Fone string		    `json:"fone"`
 	ProdutoID string    `json:"produto_id"`
 	Status string       `json:"status"`
+	Preco float64        `json:"preco,string"`
 	CreatedAt time.Time `json:"created_at,string"`
 }
 
@@ -30,18 +41,18 @@ func main() {
 	for conteudo := range  in{
 		json.Unmarshal(conteudo, &order)
 		order.Status = "Aprovado"
-		insert("sdsdsds")
+		insert(order.Status, order.Nome, order.CreatedAt, order.Email, order.Fone, order.ProdutoID, order.Preco)
 		notificaPagamento(order, conexao)
 	}
 }
 
-func insert(dado string) {
+func insert(status string, nome string, createdAt time.Time, email string, fone string, produto string, preco float64) {
 	db := DbConn()
-	insForm, err := db.Prepare("INSERT INTO pagamento(status) VALUES(?)")
+	insForm, err := db.Prepare("INSERT INTO pagamento(status, nome, createdAt, email, fone, produto, preco) VALUES(?,?,?,?,?,?,?)")
 	if err != nil {
 		panic(err.Error())
 	}
-	insForm.Exec(dado)
+	insForm.Exec(status, nome, createdAt, email, fone, produto, preco)
 	fmt.Println("foi")
 
 	defer db.Close()

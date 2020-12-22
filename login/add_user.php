@@ -5,9 +5,9 @@
 			//usuario
 			 $user = 'root';
 			//senha
-			 $password = '';
+			 $password = 'root';
 			// banco de dados
-			 $database = 'loja';
+			 $database = 'go';
 
 			$conexao = mysqli_connect($host, $user, $password, $database) or die("Erro ao conectar ao servidor:".mysqli_error());
 		
@@ -20,21 +20,12 @@
 
 
 
-$id      =  $_POST['id'];
-$nome      =  $_POST['nome'];
-$tipo      =  $_POST['tipo'];
-$preco      =  $_POST['preco'];
-$descricao      =  $_POST['descricao'];
+$user      =  $_POST['usuario'];
+$pass      =  $_POST['senha'];
 
+$sql = " SELECT * FROM user WHERE user = '$user' ";
 
-
-
-$sql = " SELECT * FROM estoque WHERE id = '$id' ";
-
-
-
-$paciente_existe = false;
-$nome_existe = false;
+$user_existe = false;
 
 $resultado_id = mysqli_query($conexao, $sql);
 
@@ -42,9 +33,9 @@ if ($resultado_id) {
 	
 	$dados_user = mysqli_fetch_array($resultado_id);
 
-	if (isset($dados_user['id'])){
+	if (isset($dados_user['user'])){
 
-		$paciente_existe = true;
+		$user_existe = true;
 
 	}
 
@@ -53,47 +44,22 @@ if ($resultado_id) {
 }
 
 
-$sql = " SELECT * FROM estoque WHERE id = '$id' ";
-
-
-$resultado_id = mysqli_query($conexao, $sql);
-
-if ($resultado_id) {
-	
-	$dados_user = mysqli_fetch_array($resultado_id);
-
-	if (isset($dados_user['id'])){
-
-		$nome_existe = true;
-
-	}
-
-    } else 	{
-	echo 'Error na execução!';
-}
-
-if ($paciente_existe || $nome_existe) {
+if ($user_existe) {
 
 	$retorno_get = "";
 
-	if ($paciente_existe) {
-		$retorno_get.= "erro_produto=1&";
+	if ($user_existe) {
+		$retorno_get.= "erro_nome=1&";
 	}
-	if ($nome_existe) {
-		$retorno_get.= "erro_nome_do_produto=1&";
-	}
-	
-	header("Location: cadastrar_produto.php?".$retorno_get);
+
+	header("Location: cad_user.php?".$retorno_get);
 	die();
 }
 
-$sql = "INSERT INTO estoque(id,nome,tipo,preco,descricao)VALUES
-   ('$id','$nome','$tipo','$preco','$descricao')";
+$sql = "INSERT INTO user(user,pass)VALUES
+   ('$user','$pass')";
 if (mysqli_query($conexao, $sql)) {
-	header("Location: cadastrar_produto.php?sucesso=1");
-	$sql = "INSERT INTO estoquegeral(id,nome,tipo,preco,descricao)VALUES
-   	('$id','$nome','$tipo','$preco','$descricao')";
-   mysqli_query($conexao, $sql);
+	header("Location: cad_user.php?sucesso=1");
 }else{
 	echo "Error!";
 }

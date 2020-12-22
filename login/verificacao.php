@@ -5,9 +5,9 @@
 			//usuario
 			 $user = 'root';
 			//senha
-			 $password = '';
+			 $password = 'root';
 			// banco de dados
-			 $database = 'loja';
+			 $database = 'go';
 			$conexao = mysqli_connect($host, $user, $password, $database) or die("Erro ao conectar ao servidor:".mysqli_error());
 		
 
@@ -22,9 +22,9 @@
 			//usuario
 			 $user = 'root';
 			//senha
-			 $password = '';
+			 $password = 'root';
 			// banco de dados
-			 $database = 'loja';
+			 $database = 'go';
 			$conexao = mysqli_connect($host, $user, $password, $database) or die("Erro ao conectar ao servidor:".mysqli_error());
 		
 
@@ -43,7 +43,7 @@
 			$usuario    =  protege($_POST['usuario']);
 			$senha      =  protege($_POST['senha']);
 
-			$resultado_id = mysqli_query($conexao, " SELECT * FROM usuarios WHERE nome = '$usuario' AND senha = '$senha' ");
+			$resultado_id = mysqli_query($conexao, " SELECT * FROM user WHERE user = '$usuario' AND pass = '$senha' ");
 			$linhas = mysqli_num_rows($resultado_id);
 
 		    if ($linhas == '') {
@@ -52,7 +52,7 @@
 			else{
 				while ($dados = mysqli_fetch_assoc($resultado_id)) {
 					session_start();
-					$_SESSION['nome_user_sessao'] = $dados['nome'];
+					$_SESSION['nome_user_sessao'] = $dados['user'];
 					header ("Location: inicio.php");
 				}
 			}

@@ -1,32 +1,33 @@
-<?php 
-  session_start(); 
-  if(isset($_SESSION['nome_user_sessao'])){
-  ?>
 <?php
-    $erro_produto = isset($_GET['erro_produto']) ? $_GET['erro_produto'] : 0;
- ?>
- <?php
-    $erro_nome_do_produto = isset($_GET['erro_nome_do_produto']) ? $_GET['erro_nome_do_produto'] : 0;
+    $erro_nome = isset($_GET['erro_nome']) ? $_GET['erro_nome'] : 0;
  ?>
 <?php
   $sucesso = isset($_GET['sucesso']) ? $_GET['sucesso'] : 0;
 ?>
 
- <form action="verificacao.php" method="post">
+ <form action="add_user.php" method="post">
         <fieldset>
-            <legend>Dados de Login</legend>
+            <legend>Cadastrar novo usuario</legend>
             <label for="Email">Usuário</label>
-            <input type="text" name="usuario" id="txUsuario" maxlength="25" />
+            <input type="text" name="usuario" id="txUsuario" maxlength="50" />
             <label for="Email">Senha</label>
             <input type="password" name="senha" id="txSenha" />
             <input type="submit" value="Cadastar" />
         </fieldset>
      </form>
-<?php
-  }
-  else{
-    $retorno_get = "";
-    $retorno_get.= "erroSessao=1";
-    header("Location: index.php?".$retorno_get);
-}
-?>
+
+      <li><a href="index.php">Login</a></li>
+ <?php
+              if ($erro_nome == 1) {
+                      echo '<font  color="red">Usuário já cadastrado</font>';
+                    }
+             ?>
+
+             <?php
+              if($sucesso == 1){
+              echo '<font  color="green">Cadastro realizado com sucesso!</font>';
+              }
+
+            ?>
+            </div>
+

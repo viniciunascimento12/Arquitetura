@@ -4,11 +4,11 @@ import (
 	"encoding/json"
 	"fmt"
 	"github.com/gorilla/mux"
+	_ "github.com/gorilla/mux"
 	"html/template"
 	"io/ioutil"
 	"net/http"
 	"os"
-	_ "github.com/gorilla/mux"
 )
 
 type Produto struct {

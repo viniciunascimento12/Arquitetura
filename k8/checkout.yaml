@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: checkout
+spec:
+  selector:
+    matchLabels:
+      app: checkout
+
+  template:
+    metadata:
+      labels:
+        app: checkout
+    spec:
+      containers:
+        - name: checkout
+          image: vininascimento1/arquitetura-checkout
+          ports:
+            - containerPort: 4003
+          env:
+            - name: PRODUTO_URL
+              value: "http://produto-service:4000"
+            - name: RABBITMQ_CONSUMER_FILA
+              value: "checkout_queue"
+            - name: rabbitmq
+              value: "http//guest:guest@localhost:5672"
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: checkout-service
+  labels:
+    app: checkout-service
+spec:
+  type: LoadBalancer
+  ports:
+    - protocol: TCP
+      port: 4003
+  selector:
+    app: checkout

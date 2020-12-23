@@ -5,14 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a2d791de-1d89-4d94-a411-0883fd1617d9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/login/add_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/cad_user.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/inicio.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/logout.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login/verificacao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8/catalogo.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8/checkout.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/k8/produto.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/catalogo/catalogo.go" beforeDir="false" afterPath="$PROJECT_DIR$/catalogo/catalogo.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pagamento/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/pagamento/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/produto.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/produtos/produtos.json" beforeDir="false" afterPath="$PROJECT_DIR$/produtos/produtos.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,17 +56,20 @@
     <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/login" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/k8" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Go" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Arquitetura\k8" />
       <recent name="C:\wamp64\www\Arquitetura\login" />
       <recent name="C:\wamp64\www\Arquitetura\teste" />
       <recent name="C:\wamp64\www\Arquitetura" />
       <recent name="C:\wamp64\www\Arquitetura\bd" />
-      <recent name="C:\wamp64\www\Arquitetura\pagamento" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\Arquitetura\produtos\imgs" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

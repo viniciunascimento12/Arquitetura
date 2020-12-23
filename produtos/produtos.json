@@ -1,24 +1,130 @@
 {
   "produtos": [
     {
-      "id":"1",
-      "nome":"teste 1",
-      "preco":"22.50"
+      "id":"1 - Microsoft Windows 10",
+      "nome":"Microsoft Window 10 ",
+      "preco":"256.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img1.jpg",
+            "name" : "img1"
+          }
+        ]
+      }
     },
     {
-      "id":"2",
-      "nome":"teste 2",
-      "preco":"78.50"
+      "id":"2 - Micro Office 365",
+      "nome":"Microsoft Office 365",
+      "preco":"120.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img2.png",
+            "name" : "img2"
+          }
+        ]
+      }
     },
     {
-      "id":"3",
-      "nome":"teste 3",
-      "preco":"200.50"
+      "id":"3 - Curso de Linux para iniciantes",
+      "nome":"Curso de Linux para iniciantes",
+      "preco":"100.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img3.png",
+            "name" : "img3"
+          }
+        ]
+      }
     },
     {
-      "id":"4",
-      "nome":"teste 4",
-      "preco":"3835.50"
+      "id":"4 - Curso de Angular para iniciantes",
+      "nome":"Curso de Angular para iniciantes",
+      "preco":"59.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img4.png",
+            "name" : "img4"
+          }
+        ]
+      }
+    },
+    {
+      "id":"5 - Game Devil May Cry 4",
+      "nome":"Devil May Cry 4",
+      "preco":"29.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img5.jpg",
+            "name" : "img5"
+          }
+        ]
+      }
+    },
+    {
+      "id":"6 - Game Fall Guys",
+      "nome":"Fall Guys",
+      "preco":"37.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img6.jpg",
+            "name" : "img6"
+          }
+        ]
+      }
+    },
+    {
+      "id":"7 - Colecao Bioshock",
+      "nome":"Coleção Bioshock",
+      "preco":"59.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img7.jpg",
+            "name" : "img7"
+          }
+        ]
+      }
+    },
+    {
+      "id":"8 - Red Dead redemption",
+      "nome":"Red Dead redemption",
+      "preco":"240.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img8.jpg",
+            "name" : "img8"
+          }
+        ]
+      }
+    },
+    {
+      "id":"9 - PHP para iniciantes",
+      "nome":"Curso de PHP para iniciantes",
+      "preco":"59.99",
+      "imagem" : {
+        "type" : "images",
+        "value" : [
+          {
+            "url": "imgs/img9.png",
+            "name" : "img"
+          }
+        ]
+      }
     }
   ]
 }
